@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/tuijian_people_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/recommend_friends_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="@drawable/bg_transparent2translucent"
+            android:id="@+id/tuijian_people_title_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tuijian_people_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="里程达人"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+            <View
+                android:id="@+id/arrow_down"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toRightOf="@id/tuijian_people_title"
+                android:background="@drawable/ic_arrow_down"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <com.waibao.team.tuyou.widget.MyRecyclerView
+        android:id="@+id/recommend_friends_list_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recommend_friends_toolbar"
+        android:background="@color/white"
+        android:visibility="visible"/>
+
+    <com.waibao.team.tuyou.widget.MyRecyclerView
+        android:id="@+id/recommend_friends_list_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recommend_friends_toolbar"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

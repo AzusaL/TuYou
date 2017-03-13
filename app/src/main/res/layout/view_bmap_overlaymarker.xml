@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="128dp"
+        android:layout_height="72dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_overlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/img_userhead"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:id="@+id/view_sex"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/ic_sex_boy"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_toRightOf="@id/img_userhead"
+                android:layout_toLeftOf="@id/view_sex"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="马赛克Sir"
+                android:textColor="@color/black3"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

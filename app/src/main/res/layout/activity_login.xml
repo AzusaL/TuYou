@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/green2">
+
+    <RelativeLayout
+        android:id="@+id/btn_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp">
+
+        <View
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_menu"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tv_name"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_toyou"/>
+
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/white_circle_shape"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="visible">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edit_namelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="用户名："
+                android:textColorHint="#cccccc"
+                android:textSize="16sp"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edit_pwdlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码："
+                android:inputType="textPassword"
+                android:textColorHint="#cccccc"
+                android:textSize="16sp"/>
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_login_sel"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_transparent2gray_sel"
+            android:gravity="center"
+            android:text=" 没有账号？点击注册 "
+            android:textColor="#888888"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/white_circle_shape"
+        android:elevation="5dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edit_namelayout_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_name_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="手机号："
+                android:inputType="phone"
+                android:textColorHint="#cccccc"
+                android:textSize="16sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/edit_yanzhenglayout_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/bt_getyanzheng">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edit_yanzheng_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="验证码："
+                    android:inputType="number"
+                    android:textColorHint="#cccccc"
+                    android:textSize="16sp"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@id/bt_getyanzheng"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_login_sel"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="获取验证码"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edit_pwdlayout_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_pwd_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="密码："
+                android:inputType="textPassword"
+                android:textColorHint="#cccccc"
+                android:textSize="16sp"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/btn_login_sel"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white2gray_sel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/default_head" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/img_head"
+            android:text="马赛克Sir"
+            android:textColor="@color/green2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_username"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_head"
+            android:text="南纬八度的恋恋不忘——与你在巴厘岛6天4晚的浪漫流离。"
+            android:textColor="@color/black3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_comment"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_head"
+            android:drawableLeft="@drawable/ic_clock"
+            android:drawablePadding="4dp"
+            android:text="1小时前"
+            android:textColor="@color/black8"
+            android:textSize="12sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_time"
+            android:background="@color/graye" />
+    </RelativeLayout>
+
+</RelativeLayout>

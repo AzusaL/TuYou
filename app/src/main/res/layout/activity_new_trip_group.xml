@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="行程详情"
+                android:padding="16dp"
+                android:textSize="16sp"/>
+
+            <com.waibao.team.tuyou.widget.WrapHeightGridView
+                android:id="@+id/gv_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_staraddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/ic_location_active"/>
+
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/view1"
+                    android:text="出发地："
+                    android:textColor="@color/black5"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_staraddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv1"
+                    android:text="惠州"
+                    android:textColor="@color/black8"
+                    android:textSize="14sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_startime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="出发时间"
+                        android:textColor="@color/black8"
+                        android:textSize="14sp"/>
+
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/tv2"
+                        android:background="@drawable/ic_date"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/bg_gray_pressed"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_endaddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:descendantFocusability="blocksDescendants">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/ic_location_active"/>
+
+
+                <TextView
+                    android:id="@+id/tv_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/view2"
+                    android:text="目的地："
+                    android:textColor="@color/black5"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_endaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_"
+                    android:text="惠州"
+                    android:textColor="@color/black8"
+                    android:textSize="14sp"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="离开时间"
+                        android:textColor="@color/black8"
+                        android:textSize="14sp"/>
+
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_toRightOf="@id/tv3"
+                        android:background="@drawable/ic_date"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#70eeeeee"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="途径地"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/bg_gray_pressed"/>
+
+            <com.waibao.team.tuyou.widget.WrapHeightListView
+                android:id="@+id/lv_pathway"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_addpathway"
+                android:layout_width="match_parent"
+                android:layout_height="48dp">
+
+                <View
+                    android:id="@+id/viewadd"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_add_circle_green"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/viewadd"
+                    android:text="添加途径地"
+                    android:textColor="@color/green1"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="#70eeeeee">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="偏好设置"
+                    android:textColor="@color/black8"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sex"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="团员性别要求"
+                    android:textColor="@color/black5"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:id="@+id/viewr1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_arrow_right_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_sexlimi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/viewr1"
+                    android:text="不限"
+                    android:textColor="@color/green1"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_gray_pressed"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_age"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="团员年龄要求"
+                    android:textColor="@color/black5"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:id="@+id/viewr2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_arrow_right_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_agelimi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/viewr2"
+                    android:text="不限"
+                    android:textColor="@color/green1"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_gray_pressed"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_credit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="团员信誉要求"
+                    android:textColor="@color/black5"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:id="@+id/viewr3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_arrow_right_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_creditlimi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/viewr3"
+                    android:text="不限"
+                    android:textColor="@color/green1"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/bg_gray_pressed"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.waibao.team.tuyou.widget.searchView.MaterialSearchView
+            android:id="@+id/search_view"
+            style="@style/MaterialSearchViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+</RelativeLayout>

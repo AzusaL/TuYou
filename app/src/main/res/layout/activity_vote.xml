@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/default_head"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/img_head"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/img_head"
+                android:text="发起人的昵称"
+                android:textColor="@color/green3"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/img_head"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/img_head"
+                android:text="2016/6/7"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_head"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="今天我们到底要去哪里玩啊你们这帮傻吊,整天一点正事都不说就知道瞎几把聊天"
+                android:textColor="#222222"
+                android:textSize="18sp"/>
+
+            <com.waibao.team.tuyou.widget.WrapHeightListView
+                android:id="@+id/vote_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:divider="@null"/>
+
+            <Button
+                android:id="@+id/bt_vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vote_list"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/btn_login_sel"
+                android:gravity="center"
+                android:text="投票"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/voted_rv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/vote_list"-->
+            <!--android:layout_marginTop="@dimen/activity_vertical_margin"/>-->
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

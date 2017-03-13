@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_price"
+        android:showAsAction="never"
+        android:title="按价格排序(低到高)" />
+    <item
+        android:id="@+id/action_rating"
+        android:showAsAction="never"
+        android:title="按好评排序（高到低）" />
+    <item
+        android:id="@+id/action_together"
+        android:showAsAction="never"
+        android:title="综合" />
+</menu>

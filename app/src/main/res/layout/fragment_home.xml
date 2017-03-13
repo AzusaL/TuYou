@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_widget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/Home_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="168dp">
+
+                <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                    android:id="@+id/flash_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="168dp" />
+
+                <com.waibao.team.tuyou.widget.pageIndicator.LinePageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    app:selectedColor="@color/colorPrimary"
+                    app:unselectedColor="#ffcccccc" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="出行必备"
+                    android:textColor="@color/black8"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="0.5dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/tv1"
+                    android:background="#eeeeee" />
+
+                <TextView
+                    android:id="@+id/btn_hotel"
+                    android:layout_width="44dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/view1"
+                    android:background="@drawable/bg_circlegray2deepgray_sel"
+                    android:gravity="center"
+                    android:text="酒店"
+                    android:textColor="@color/black8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_traintickets"
+                    android:layout_width="50dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/btn_hotel"
+                    android:background="@drawable/bg_circlegray2deepgray_sel"
+                    android:gravity="center"
+                    android:text="火车票"
+                    android:textColor="@color/black8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_mentickets"
+                    android:layout_width="44dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toRightOf="@id/btn_traintickets"
+                    android:background="@drawable/bg_circlegray2deepgray_sel"
+                    android:gravity="center"
+                    android:text="门票"
+                    android:textColor="@color/black8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_airtickets"
+                    android:layout_width="44dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/btn_mentickets"
+                    android:background="@drawable/bg_circlegray2deepgray_sel"
+                    android:gravity="center"
+                    android:text="机票"
+                    android:textColor="@color/black8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_foods"
+                    android:layout_width="44dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/btn_airtickets"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/bg_circlegray2deepgray_sel"
+                    android:gravity="center"
+                    android:text="美食"
+                    android:textColor="@color/black8"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#80eeeeee" />
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_marginRight="@dimen/activity_horizontal_margin"-->
+            <!--android:layout_marginTop="@dimen/activity_vertical_margin"-->
+            <!--android:background="@drawable/white_circle_shape"-->
+            <!--android:orientation="vertical">-->
+
+            <!--&lt;!&ndash;<View&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="80dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@drawable/bgcs1"/>&ndash;&gt;-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="2">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<View-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/ic_plane"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="机票"/>-->
+            <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="#cccccc"/>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<View-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/ic_hotel"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="酒店"/>-->
+            <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="#cccccc"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="2">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<View-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/ic_ticket"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="门票"/>-->
+            <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="#cccccc"/>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<View-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:background="@drawable/ic_train"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="火车"/>-->
+            <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/seemore_tuan"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_white2gray_sel"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26dp"
+                    android:text="行团推荐"
+                    android:textColor="@color/black8"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:drawableRight="@drawable/more_codes_normal"
+                    android:text="查看全部"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <com.waibao.team.tuyou.widget.WrapScrollRview
+                android:id="@+id/tuijian_tuan_rv"
+                android:layout_width="match_parent"
+                android:layout_height="700dp" />
+
+            <RelativeLayout
+                android:id="@+id/seemore_people"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_white2gray_sel"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="26dp"
+                    android:text="达人推荐"
+                    android:textColor="@color/black8"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:drawableRight="@drawable/more_codes_normal"
+                    android:text="查看全部"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <com.waibao.team.tuyou.widget.WrapScrollRview
+                android:id="@+id/tuijian_people_rv"
+                android:layout_width="match_parent"
+                android:layout_height="624dp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

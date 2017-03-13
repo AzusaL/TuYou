@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#56bc7b</color>
+    <color name="colorPrimaryDark">#56bc7b</color>
+    <color name="colorAccent">#56bc7b</color>
+    <color name="green1">#7ac194</color>
+    <color name="green2">#56bc7b</color>
+    <color name="green3">#24a251</color>
+    <color name="green4">#50056f00</color>
+
+    <color name="bg_gray_pressed">#e8e8e8</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#30000000</color>
+    <color name="graya">#aaaaaa</color>
+    <color name="grayc">#cccccc</color>
+    <color name="grayd">#dddddd</color>
+    <color name="graye">#eeeeee</color>
+
+    <color name="black0">#000000</color>
+    <color name="black2">#222222</color>
+    <color name="black3">#333333</color>
+    <color name="black5">#555555</color>
+    <color name="black6">#666666</color>
+    <color name="black7">#777777</color>
+    <color name="black8">#888888</color>
+    <item name="line_green" type="drawable">#ff3bbd79</item>
+
+    <color name="like">#f50057</color>
+
+</resources>

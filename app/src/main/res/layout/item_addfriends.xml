@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white2gray_sel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_arrow_right_grey" />
+
+            <ImageView
+                android:id="@+id/friends_head_img"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/default_head" />
+
+            <TextView
+                android:id="@+id/friends_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/friends_head_img"
+                android:layout_toRightOf="@id/friends_head_img"
+                android:text="海杰"
+                android:textColor="#232323"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/gexing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/friends_name"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black8"
+                android:layout_toLeftOf="@id/view"
+                android:layout_toRightOf="@id/friends_head_img"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="我的个性签名"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="80dp"
+            android:background="#eeeeee" />
+    </RelativeLayout>
+
+</RelativeLayout>

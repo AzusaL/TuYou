@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/titlerl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_transparent2translucent"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tv_foload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:maxLength="6"
+                    android:text="最近图片"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/raw"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/tv_foload"
+                    android:background="@drawable/ic_arrow_down" />
+
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_menu" />
+
+            <TextView
+                android:id="@+id/img_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/btn_back"
+                android:layout_toRightOf="@+id/btn_back"
+                android:text="9/9"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_nest"
+                android:layout_width="72dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_transparent2translucent"
+                android:text="下一步"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#eeeeee"
+        android:id="@+id/photo_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:clipToPadding="false"
+        android:paddingTop="4dp" />
+
+</LinearLayout>

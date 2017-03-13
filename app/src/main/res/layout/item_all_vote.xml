@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/bg_white2gray_sel">
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/default_head"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/head_img"
+            android:layout_toRightOf="@id/head_img"
+            android:text="涛哥"
+            android:textColor="@color/green3"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/head_img"
+            android:layout_toRightOf="@id/head_img"
+            android:text="2016.7.16"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/head_img"
+            android:layout_below="@id/head_img"
+            android:text="一起去成都吧"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:id="@+id/to_detial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="点击查看投票详情"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</RelativeLayout>

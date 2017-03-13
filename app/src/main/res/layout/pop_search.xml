@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="性别"/>
+
+        <RadioGroup
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:checkedButton="@+id/sex_default"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@id/sex_default"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="全部"/>
+
+            <RadioButton
+                android:id="@+id/sex_male"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="帅哥"/>
+
+            <RadioButton
+                android:id="@+id/sex_female"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="美女"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="年龄"/>
+
+        <RadioGroup
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:checkedButton="@+id/age_default"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/age_default"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="不限"/>
+
+            <RadioButton
+                android:id="@+id/age_18to22"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="18-22"/>
+
+            <RadioButton
+                android:id="@+id/age_23to26"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="23-26"/>
+
+            <RadioButton
+                android:id="@+id/age_27to35"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-176dp"
+                android:layout_marginTop="43dp"
+                android:text="27-35"/>
+
+            <RadioButton
+                android:id="@+id/age_35to"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="43dp"
+                android:text="35+"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="信誉"/>
+
+        <RadioGroup
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:checkedButton="@+id/credit_defalut"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/credit_defalut"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="不限"/>
+
+            <RadioButton
+                android:id="@+id/credit_1"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="90+"/>
+
+            <RadioButton
+                android:id="@+id/credit_2"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="70+"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:id="@+id/status_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxEms="2"
+            android:text="状态"/>
+
+        <RadioGroup
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:checkedButton="@+id/status_default"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/status_default"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:text="不限"/>
+
+            <RadioButton
+                android:id="@+id/status_not_start"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="未开始"/>
+
+            <RadioButton
+                android:id="@+id/status_going"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:text="出行中"/>
+
+            <RadioButton
+                android:id="@+id/status_over"
+                style="@style/pop_radio_bt"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-176dp"
+                android:layout_marginTop="43dp"
+                android:text="已结束"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <Button
+        android:id="@+id/search_ensure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/btn_login_sel"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="#eeeeee"/>
+
+</LinearLayout>

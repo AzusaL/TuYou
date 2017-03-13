@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
+
+    <ImageView
+        android:id="@+id/img_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/default_head"
+        android:scaleType="centerCrop" />
+
+
+    <TextView
+        android:id="@+id/tv_jianjie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="惠州-南京"
+        android:layout_marginRight="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/green1"
+        android:textSize="16sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@id/tv_jianjie"
+        android:layout_toRightOf="@id/img_head">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AzusaL"
+            android:textColor="#222222"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

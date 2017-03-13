@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_white2gray_sel">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/floder_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_floder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/floder_img"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="图片相册"
+            android:textColor="#555555"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_foloadcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/tv_floder"
+            android:text="(619)"
+            android:textColor="#888888"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

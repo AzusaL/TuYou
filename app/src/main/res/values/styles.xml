@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/green3</item>
+
+        <!--toolbar上显示更多menu的图标-->
+        <item name="actionOverflowButtonStyle">@style/MyActionButton.Overflow</item>
+    </style>
+
+    <style name="MyActionButton.Overflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_sort_white</item>
+    </style>
+
+    <style name="MSV_ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <style name="MaterialSearchViewStyle">
+        <!-- Background for the search bar-->
+        <item name="searchBackground">@color/white</item>
+
+        <!-- Change voice icon-->
+        <item name="searchVoiceIcon">@drawable/ic_action_voice_search</item>
+
+        <!-- Change clear text icon-->
+        <item name="searchCloseIcon">@drawable/ic_action_navigation_close</item>
+
+        <!-- Change up icon-->
+        <item name="searchBackIcon">@drawable/ic_action_navigation_arrow_back</item>
+
+        <!-- Change icon for the suggestions-->
+        <item name="searchSuggestionIcon">@drawable/ic_suggestion</item>
+
+        <!-- Change background for the suggestions list view-->
+        <item name="searchSuggestionBackground">@android:color/white</item>
+
+        <!-- Change text color for edit text. This will also be the color of the cursor-->
+        <item name="android:textColor">@color/black8</item>
+
+        <!-- Change hint text color for edit text-->
+        <item name="android:textColorHint">#cccccc</item>
+
+        <!-- Hint for edit text-->
+        <item name="android:hint">搜索城市</item>
+    </style>
+
+    <style name="Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DataPickerDialogTheam" parent="Theme.AppCompat.Light.Dialog">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/green3</item>
+
+    </style>
+
+    <style name="AnimationFade">
+        <!-- PopupWindow淡入淡出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/in_alpha</item>
+        <item name="android:windowExitAnimation">@anim/out_alpha</item>
+    </style>
+
+    <style name="pop_radio_bt">
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/color_black_check2_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/green_radio_sel</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+</resources>

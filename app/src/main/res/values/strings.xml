@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">途游</string>
+
+    <string-array name="me">
+        <item> 我 的 草 稿</item>
+        <item> 礼 品 卡 </item>
+    </string-array>
+    <string-array name="sex">
+        <item>  不限  </item>
+        <item>  女  </item>
+        <item>  男  </item>
+    </string-array>
+    <string-array name="age">
+        <item>   不限   </item>
+        <item>  18-22  </item>
+        <item>  23-26  </item>
+        <item>  27-35  </item>
+        <item>   35+   </item>
+    </string-array>
+    <string-array name="credit">
+        <item>   不限   </item>
+        <item>  50以上  </item>
+        <item>  70以上  </item>
+        <item>  80以上  </item>
+        <item>  90以上  </item>
+    </string-array>
+
+    <string-array name="nearby">
+        <item>附近的人</item>
+        <item>附近的团</item>
+    </string-array>
+    <string-array name="sexselect">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="status">
+        <item>单身</item>
+        <item>已婚</item>
+    </string-array>
+</resources>

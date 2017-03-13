@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="1dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <View
+            android:id="@+id/color_background"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#4456bc7b"/>
+
+        <CheckBox
+            android:id="@+id/vote_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/vote_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/vote_cb"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:maxWidth="250dp"
+            android:text="去深圳吧去深圳吧去深圳吧去深圳吧去深圳吧"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/vote_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:text="27"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+    </RelativeLayout>
+</RelativeLayout>

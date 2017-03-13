@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/colorPrimary"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:hint="标题（一事一记）"
+                android:padding="10dp"
+                android:textColorHint="@color/graya"
+                android:textSize="16sp"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edit_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:hint="记录这美好的时刻"
+                android:padding="10dp"
+                android:textColorHint="@color/graya"
+                android:textSize="16sp"/>
+
+            <com.waibao.team.tuyou.widget.WrapHeightGridView
+                android:id="@+id/gv_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_tripgroup"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <View
+                    android:id="@+id/viewa"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/ic_trip"/>
+
+                <TextView
+                    android:id="@+id/tv_tripgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/viewa"
+                    android:text="选择行程"
+                    android:textColor="@color/black8"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_arrow_right_grey"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_address"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_white2gray_sel">
+
+                <View
+                    android:id="@+id/viewb"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/ic_adress_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_pathway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@id/viewb"
+                    android:text="选择途经地"
+                    android:textColor="@color/black8"
+                    android:textSize="16sp"/>
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_arrow_right_grey"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#eeeeee"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

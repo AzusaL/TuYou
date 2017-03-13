@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="个人中心"
+            android:textColor="#b9b8b8"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:id="@+id/myYouJi"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/bg_white2gray_sel"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/headImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/default_head"/>
+
+            <TextView
+                android:id="@+id/weidenglu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/headImage"
+                android:text="未登录"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_more"
+                android:dropDownVerticalOffset="25dp"
+                android:dropDownWidth="200dp"/>
+
+            <View
+                android:id="@+id/me_notifiy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_toLeftOf="@id/spinner"
+                android:background="@drawable/ic_notifications"
+                android:clickable="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="#eeeeee"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="社区"
+            android:textColor="#b9b8b8"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/collection_rv"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_white2gray_sel"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <View
+                android:id="@+id/collection_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_collection"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/collection_img"
+                android:text="我的收藏"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/myFriends_rv"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_white2gray_sel"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <View
+                android:id="@+id/myFriends_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_friends"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/myFriends_img"
+                android:text="我的好友"
+                android:textSize="16sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/myMessage_rl"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_white2gray_sel"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <View
+                android:id="@+id/Message_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_notifications"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/Message_img"
+                android:text="我的消息"
+                android:textSize="16sp"/>
+
+            <View
+                android:visibility="gone"
+                android:id="@+id/me_message_point"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/circle_red_shape"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="#eeeeee"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="其他"
+            android:textColor="#b9b8b8"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/advice_rv"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_white2gray_sel"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <View
+                android:id="@+id/advice_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_person_grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/advice_img"
+                android:text="身份验证"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_rv"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/bg_white2gray_sel"
+            android:clickable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <View
+                android:id="@+id/setting_img"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_settings"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/setting_img"
+                android:text="设置"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

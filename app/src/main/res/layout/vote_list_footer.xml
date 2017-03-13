@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="500dp"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/add_list"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_below="@id/list_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_white2gray_sel"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_add_circle_green"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="增加选项"
+            android:lines="1"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</RelativeLayout>

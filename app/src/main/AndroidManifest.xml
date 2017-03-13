@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.waibao.team.tuyou"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <permission
+        android:name="${applicationId}.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+
+    <!-- Required 一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <application
+        android:name=".app.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="SQbuzEovsuMwjnwVIgOzYC58sUfAOGFF"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+
+        <!-- Required Push SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <!-- Required Push SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <!-- Required  显示通知栏 -->
+                <category android:name="${applicationId}"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required Push SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="${applicationId}"/>
+            </intent-filter>
+        </activity>
+        <!-- Required Push SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"/>
+        <!-- Required Push SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+
+        <!-- IM Required IM SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.im.android.helpers.IMReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.im.android.action.IM_RESPONSE"/>
+                <action android:name="cn.jpush.im.android.action.NOTIFICATION_CLICK_PROXY"/>
+
+                <category android:name="${applicationId}"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required. Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <!-- Required. AppKey copied from Portal -->
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="7b26efc2baac5f7920923f38"/>
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+            android:value="GlideModule"/>
+
+        <receiver
+            android:name=".receiver.JPReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/>
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="${applicationId}"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name=".activity.SettingActivity"/>
+        <activity android:name=".activity.MyFriendsActivity"/>
+        <activity
+            android:name=".activity.ConversationActivity"
+            android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity
+            android:name=".activity.TripGroupActivity"
+            android:theme="@style/Transparent"/>
+        <activity android:name=".activity.NewTripGroupActivity"/>
+        <activity android:name=".activity.NewJournalActivity"/>
+        <activity android:name=".activity.CommentActivity"/>
+        <activity android:name=".activity.SearchActivity"/>
+        <activity android:name=".activity.MyCollectionsActivity"/>
+        <activity android:name=".activity.RecommendFriendsActivity"/>
+        <activity android:name=".activity.RecommendTuanActivity"/>
+        <activity android:name=".activity.PhotoSelectActivity"/>
+        <activity android:name=".activity.SearchDetailActivity"/>
+        <activity android:name=".activity.NearbyMsgActivity"/>
+        <activity android:name=".activity.ConversationGroupActivity"/>
+        <activity android:name=".activity.MyMessageActivity"/>
+        <activity android:name=".activity.RecommendMsgActivity"/>
+        <activity android:name=".activity.RoutePlanActivity"/>
+        <activity android:name=".activity.TrainsQueryActivity"/>
+        <activity android:name=".activity.TrainQueryResultActivity"/>
+        <activity android:name=".activity.AirPlaneQueryResultActivity"/>
+        <activity
+            android:name=".activity.PersonPageActivity"
+            android:theme="@style/Transparent"/>
+        <activity android:name=".activity.NewVoteActivity"/>
+        <activity android:name=".activity.VoteActivity"/>
+        <activity android:name=".activity.AllGroupVoteActivity"/>
+        <activity android:name=".activity.SelectGroupActivity"/>
+        <activity android:name=".activity.UserGroupAndJournalActivity"/>
+        <activity android:name=".activity.EditPersonalMsgActivity"/>
+        <activity android:name=".activity.IdentityActivity">
+        </activity>
+        <activity android:name=".activity.RecommendFoodActivity">
+        </activity>
+        <activity android:name=".activity.PhotoViewActivity"/>
+    </application>
+
+</manifest>

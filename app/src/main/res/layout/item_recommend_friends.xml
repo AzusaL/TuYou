@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <ImageView
+                android:id="@+id/darentuijian_user_head"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/default_head"/>
+
+            <RelativeLayout
+                android:id="@+id/darentuijian_RL"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignTop="@id/darentuijian_user_head"
+                android:layout_toRightOf="@id/darentuijian_user_head">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/darentuijian_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:text="行走的柠檬"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/darentuijian_user_gender"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/female_shape"
+                        android:gravity="center"
+                        android:text="42"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/darentuijiansum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="共236.12km"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/add_friend"
+                android:layout_width="60dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/guanzhu_sel"
+                android:gravity="center"
+                android:text="+ 好友"
+                android:textColor="@color/green3"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

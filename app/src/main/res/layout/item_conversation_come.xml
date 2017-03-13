@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/conversation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="5月16日 11:20"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/conversation_time"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/default_head"/>
+
+        <TextView
+            android:id="@+id/nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/head_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/head_img"
+            android:text="名字:"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/conver_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conversation_time"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/head_img"
+            android:layout_toRightOf="@id/head_img"
+            android:background="@drawable/ic_message_bg_from"
+            android:gravity="center"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:text="你好,最近在干啥呢"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</RelativeLayout>

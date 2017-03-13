@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="信誉度"
+            android:textColor="@color/black8"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlhead"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/tv1"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_head" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_head"
+                android:text="马赛克Sir："
+                android:textColor="@color/black3"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_name"
+                android:text="100"
+                android:textColor="@color/green1"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/rlhead">
+
+            <lecho.lib.hellocharts.view.ColumnChartView
+                android:id="@+id/reputation_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl1"
+            android:layout_margin="16dp"
+            android:text="年龄统计"
+            android:textColor="@color/black8"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/tv2">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/age_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl2"
+            android:layout_margin="16dp"
+            android:text="男女比例"
+            android:textColor="@color/black8"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl3"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/tv3">
+
+            <lecho.lib.hellocharts.view.PieChartView
+                android:id="@+id/sex_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

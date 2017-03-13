@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_centerVertical="true"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/default_head"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/head_img"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxWidth="160dp"
+            android:text="那个名字那个名字那个名字那个名字那个名字那个名字那个名字"
+            android:textColor="#343434"/>
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_toRightOf="@id/head_img"
+            android:text="请求加为好友"
+            android:textColor="#343434"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/sure"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/refuse"
+            android:background="@drawable/bg_green2deepgreen_sel"
+            android:text="同意"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@id/refuse"
+            android:layout_width="56dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/bg_logout_sel"
+            android:text="拒绝"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tx_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="32dp"
+            android:text="已同意"
+            android:textColor="#cccccc"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="#eeeeee"/>
+    </RelativeLayout>
+</RelativeLayout>

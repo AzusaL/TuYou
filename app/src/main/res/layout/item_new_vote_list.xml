@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/bt_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_remove_circle_green"
+            android:clickable="true"/>
+
+        <EditText
+            android:textColorHint="#cccccc"
+            android:id="@+id/et_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="43dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@null"
+            android:hint="在此填写选项"
+            android:lines="1"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/et_menu"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_white2gray_sel">
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="wrap_content"
+            android:layout_height="78dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp">
+
+            <TextView
+                android:id="@+id/tv_startime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:text="06:39"
+                android:textColor="@color/green2"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_trainnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_startime"
+                android:text="G102"
+                android:textColor="@color/black7"
+                android:textSize="14sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_startime"
+                android:text="12:18"
+                android:textColor="@color/black7"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:layout_toRightOf="@id/rl1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_clock"
+                android:drawablePadding="4dp"
+                android:text="5时39分"
+                android:textColor="@color/black7"
+                android:textSize="14sp"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp">
+
+                <View
+                    android:id="@+id/view22"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ic_timeline_new"/>
+
+                <View
+                    android:id="@+id/view33"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/ic_timeline_new"/>
+
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/view33"
+                    android:layout_below="@id/view22"
+                    android:layout_marginLeft="4dp"
+                    android:background="@color/graye"/>
+
+                <TextView
+                    android:id="@+id/tv_staraddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/view22"
+                    android:text="上海虹桥"
+                    android:textColor="@color/black5"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_endaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/view22"
+                    android:text="北京南"
+                    android:textColor="@color/black5"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:id="@+id/tv_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:text="二等座"
+                android:textColor="@color/black7"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_set"
+                android:layout_alignParentRight="true"
+                android:text="￥553"
+                android:textColor="#ff6600"
+                android:textSize="20sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_remainnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_set"
+                android:text="513张"
+                android:textColor="@color/black7"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeeeee"/>
+    </RelativeLayout>
+
+</RelativeLayout>

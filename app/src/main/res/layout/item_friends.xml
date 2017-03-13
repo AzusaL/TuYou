@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_white2gray_sel">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <ImageView
+        android:id="@+id/friends_head_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:background="@drawable/default_head"/>
+
+    <TextView
+        android:id="@+id/friends_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/friends_head_img"
+        android:layout_toEndOf="@id/friends_head_img"
+        android:layout_toRightOf="@id/friends_head_img"
+        android:text="海杰"
+        android:textColor="#232323"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/gexing"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/friends_head_img"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_toEndOf="@id/friends_head_img"
+        android:layout_toRightOf="@id/friends_head_img"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="我的个性签名我的个性签名我的个性签名我的个性签名我的个性签名"
+        android:textSize="15sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="#dddddd"/>
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

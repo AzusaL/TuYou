@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/conversation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:text="5月16日 11:20"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/conversation_time"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/default_head"/>
+
+        <TextView
+            android:id="@+id/nick_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/head_img"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/head_img"
+            android:text="名字:"
+            android:textSize="12sp"/>
+
+        <RelativeLayout
+            android:id="@+id/conver_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conversation_time"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/head_img"
+            android:layout_toRightOf="@id/head_img"
+            android:background="@drawable/ic_message_bg_from"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <View
+                android:id="@+id/ic_vote"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_vote_white"/>
+
+            <TextView
+                android:id="@+id/vote_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/ic_vote"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxWidth="176dp"
+                android:text="投票标题投票标题投票标题投票标题投票标题投票标题"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

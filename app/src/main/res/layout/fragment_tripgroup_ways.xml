@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/head_waystimeline_rv" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_jianjie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:text="团简介"
+                android:textColor="@color/black8"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toLeftOf="@id/tv_jianjie"
+                android:background="#eeeeee" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/tv_jianjie"
+                android:background="#eeeeee" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_groupintroction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="喜欢烟雨江南的我，一直对小桥流水青砖黑瓦情有独钟，想把江南的每处风景都看一遍，感受它的文化底蕴，于是，我来到了。。。。"
+            android:textColor="@color/black3"
+            android:textSize="16dp" />
+
+        <com.waibao.team.tuyou.widget.WrapHeightGridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_limi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="8dp"
+                android:text="结伴要求"
+                android:textColor="@color/black8"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:layout_toLeftOf="@id/tv_limi"
+                android:background="#eeeeee" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/tv_limi"
+                android:background="#eeeeee" />
+
+        </RelativeLayout>
+
+
+        <com.waibao.team.tuyou.widget.WrapHeightGridView
+            android:id="@+id/limi_gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:columnWidth="90dp"
+            android:gravity="center"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

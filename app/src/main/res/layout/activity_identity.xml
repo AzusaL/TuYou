@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/qingpaishe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eeeeee"
+                android:padding="8dp"
+                android:text="请拍摄你的大陆第二代身份证原件(避免表面反光)"
+                android:textColor="#777777"
+                android:textSize="12sp"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="32dp"
+                android:background="@color/white"
+                android:gravity="start"
+                android:hint="请输入真实姓名："
+                android:lines="1"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="8dp"
+                android:textColorHint="#cccccc"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/et_name"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#eeeeee"/>
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="380dp"
+                android:layout_height="80dp"
+                android:layout_below="@id/et_name"
+                android:layout_marginTop="32dp"
+                android:background="@color/white"
+                android:gravity="start"
+                android:hint="请输入身份证号码："
+                android:lines="1"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="8dp"
+                android:textColorHint="#cccccc"
+                android:textSize="14sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/et_code"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="#eeeeee"/>
+
+
+            <TextView
+                android:id="@+id/xianpai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_code"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="1. 先拍正面和人像"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/img_zheng"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/xianpai"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_white2gray_sel"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_identity_zheng"/>
+
+
+            <TextView
+                android:id="@+id/zaipai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_zheng"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="32dp"
+                android:text="2. 再拍国旗背面"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:id="@+id/img_fan"
+                android:layout_width="165dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/zaipai"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_white2gray_sel"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_identity_fan"/>
+
+            <Button
+                android:id="@+id/ensure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_fan"
+                android:layout_marginBottom="32dp"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/btn_login_sel"
+                android:text="发送验证"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

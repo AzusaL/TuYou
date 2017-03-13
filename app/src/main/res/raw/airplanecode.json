@@ -1,0 +1,874 @@
+{
+  "cities": [
+    {
+      "name": "上海",
+      "code": "SHA",
+      "spell": "Shanghai"
+    },
+    {
+      "name": "北京",
+      "code": "BJS",
+      "spell": "Beijing"
+    },
+    {
+      "name": "香港",
+      "code": "HKG",
+      "spell": "Hong Kong"
+    },
+    {
+      "name": "广州",
+      "code": "CAN",
+      "spell": "Guangzhou"
+    },
+    {
+      "name": "杭州",
+      "code": "HGH",
+      "spell": "Hangzhou"
+    },
+    {
+      "name": "厦门",
+      "code": "XMN",
+      "spell": "Xiamen"
+    },
+    {
+      "name": "南京",
+      "code": "NKG",
+      "spell": "Nanjing"
+    },
+    {
+      "name": "澳门",
+      "code": "MFM",
+      "spell": "MACAU"
+    },
+    {
+      "name": "成都",
+      "code": "CTU",
+      "spell": "Chengdu"
+    },
+    {
+      "name": "青岛",
+      "code": "TAO",
+      "spell": "Qingdao"
+    },
+    {
+      "name": "台北",
+      "code": "TPE",
+      "spell": "TAIPEI"
+    },
+    {
+      "name": "福州",
+      "code": "FOC",
+      "spell": "Fuzhou"
+    },
+    {
+      "name": "天津",
+      "code": "TSN",
+      "spell": "Tianjin"
+    },
+    {
+      "name": "深圳",
+      "code": "SZX",
+      "spell": "Shenzhen"
+    },
+    {
+      "name": "大连",
+      "code": "DLC",
+      "spell": "Dalian"
+    },
+    {
+      "name": "沈阳",
+      "code": "SHE",
+      "spell": "Shenyang"
+    },
+    {
+      "name": "昆明",
+      "code": "KMG",
+      "spell": "Kunming"
+    },
+    {
+      "name": "武汉",
+      "code": "WUH",
+      "spell": "Wuhan"
+    },
+    {
+      "name": "宁波",
+      "code": "NGB",
+      "spell": "Ningbo"
+    },
+    {
+      "name": "无锡",
+      "code": "WUX",
+      "spell": "Wuxi"
+    },
+    {
+      "name": "晋江",
+      "code": "JJN",
+      "spell": "Jinjiang"
+    },
+    {
+      "name": "重庆",
+      "code": "CKG",
+      "spell": "Chongqing"
+    },
+    {
+      "name": "三亚",
+      "code": "SYX",
+      "spell": "Sanya"
+    },
+    {
+      "name": "西安",
+      "code": "SIA",
+      "spell": "Xian"
+    },
+    {
+      "name": "香港",
+      "code": "HKG",
+      "spell": "Hong Kong"
+    },
+    {
+      "name": "首尔",
+      "code": "SEL",
+      "spell": "Seoul"
+    },
+    {
+      "name": "台北",
+      "code": "TPE",
+      "spell": "TAIPEI"
+    },
+    {
+      "name": "东京",
+      "code": "TYO",
+      "spell": "Tokyo"
+    },
+    {
+      "name": "新加坡",
+      "code": "SIN",
+      "spell": "Singapore"
+    },
+    {
+      "name": "澳门",
+      "code": "MFM",
+      "spell": "MACAU"
+    },
+    {
+      "name": "曼谷",
+      "code": "BKK",
+      "spell": "Bangkok"
+    },
+    {
+      "name": "大阪",
+      "code": "OSA",
+      "spell": "Osaka"
+    },
+    {
+      "name": "胡志明市",
+      "code": "SGN",
+      "spell": "Ho Chi Minh City"
+    },
+    {
+      "name": "马尼拉",
+      "code": "MNL",
+      "spell": "Manila"
+    },
+    {
+      "name": "名古屋",
+      "code": "NGO",
+      "spell": "Nagoya"
+    },
+    {
+      "name": "伦敦(英国)",
+      "code": "LON",
+      "spell": "London"
+    },
+    {
+      "name": "吉隆坡",
+      "code": "KUL",
+      "spell": "Kuala Lumpur"
+    },
+    {
+      "name": "釜山",
+      "code": "PUS",
+      "spell": "Pusan"
+    },
+    {
+      "name": "悉尼(澳大利亚)",
+      "code": "SYD",
+      "spell": "Sydney"
+    },
+    {
+      "name": "法兰克福",
+      "code": "FRA",
+      "spell": "Frankfurt"
+    },
+    {
+      "name": "温哥华",
+      "code": "YVR",
+      "spell": "Vancouver"
+    },
+    {
+      "name": "巴黎",
+      "code": "PAR",
+      "spell": "Paris"
+    },
+    {
+      "name": "纽约",
+      "code": "NYC",
+      "spell": "New York"
+    },
+    {
+      "name": "洛杉矶",
+      "code": "LAX",
+      "spell": "Los Angeles"
+    },
+    {
+      "name": "夏威夷",
+      "code": "HNL",
+      "spell": "Honolulu"
+    },
+    {
+      "name": "香港",
+      "code": "HKG",
+      "spell": "Hong Kong"
+    },
+    {
+      "name": "东京",
+      "code": "TYO",
+      "spell": "Tokyo"
+    },
+    {
+      "name": "台北",
+      "code": "TPE",
+      "spell": "TAIPEI"
+    },
+    {
+      "name": "首尔",
+      "code": "SEL",
+      "spell": "Seoul"
+    },
+    {
+      "name": "新加坡",
+      "code": "SIN",
+      "spell": "Singapore"
+    },
+    {
+      "name": "曼谷",
+      "code": "BKK",
+      "spell": "Bangkok"
+    },
+    {
+      "name": "吉隆坡",
+      "code": "KUL",
+      "spell": "Kuala Lumpur"
+    },
+    {
+      "name": "大阪",
+      "code": "OSA",
+      "spell": "Osaka"
+    },
+    {
+      "name": "澳门",
+      "code": "MFM",
+      "spell": "MACAU"
+    },
+    {
+      "name": "雅加达",
+      "code": "JKT",
+      "spell": "Jakarta"
+    },
+    {
+      "name": "胡志明市",
+      "code": "SGN",
+      "spell": "Ho Chi Minh City"
+    },
+    {
+      "name": "马尼拉",
+      "code": "MNL",
+      "spell": "Manila"
+    },
+    {
+      "name": "巴厘岛",
+      "code": "DPS",
+      "spell": "Bali"
+    },
+    {
+      "name": "名古屋",
+      "code": "NGO",
+      "spell": "Nagoya"
+    },
+    {
+      "name": "普吉岛",
+      "code": "HKT",
+      "spell": "Phuket"
+    },
+    {
+      "name": "河内",
+      "code": "HAN",
+      "spell": "Hanoi"
+    },
+    {
+      "name": "马累",
+      "code": "MLE",
+      "spell": "MALDIVES"
+    },
+    {
+      "name": "迪拜",
+      "code": "DXB",
+      "spell": "DUBAI"
+    },
+    {
+      "name": "釜山",
+      "code": "PUS",
+      "spell": "Pusan"
+    },
+    {
+      "name": "加德满都",
+      "code": "KTM",
+      "spell": "Kathmandu"
+    },
+    {
+      "name": "高雄",
+      "code": "KHH",
+      "spell": "Kaohsiung"
+    },
+    {
+      "name": "福冈",
+      "code": "FUK",
+      "spell": "Fukuoka"
+    },
+    {
+      "name": "金边",
+      "code": "PNH",
+      "spell": "PHNOM PENH"
+    },
+    {
+      "name": "德里",
+      "code": "DEL",
+      "spell": "Delhi"
+    },
+    {
+      "name": "济州岛",
+      "code": "CJU",
+      "spell": "JEJU"
+    },
+    {
+      "name": "札幌",
+      "code": "SPK",
+      "spell": "Hokkaido"
+    },
+    {
+      "name": "伊斯坦布尔",
+      "code": "IST",
+      "spell": "Istanbul"
+    },
+    {
+      "name": "乌兰巴托",
+      "code": "ULN",
+      "spell": "ULAANBAATAR"
+    },
+    {
+      "name": "孟买",
+      "code": "BOM",
+      "spell": "Mumbai"
+    },
+    {
+      "name": "伦敦(英国)",
+      "code": "LON",
+      "spell": "London"
+    },
+    {
+      "name": "巴黎",
+      "code": "PAR",
+      "spell": "Paris"
+    },
+    {
+      "name": "法兰克福",
+      "code": "FRA",
+      "spell": "Frankfurt"
+    },
+    {
+      "name": "莫斯科",
+      "code": "MOW",
+      "spell": "Moscow"
+    },
+    {
+      "name": "罗马",
+      "code": "ROM",
+      "spell": "Rome"
+    },
+    {
+      "name": "阿姆斯特丹",
+      "code": "AMS",
+      "spell": "Amsterdam"
+    },
+    {
+      "name": "米兰",
+      "code": "MIL",
+      "spell": "Milan"
+    },
+    {
+      "name": "慕尼黑",
+      "code": "MUC",
+      "spell": "Munich"
+    },
+    {
+      "name": "斯德哥尔摩",
+      "code": "STO",
+      "spell": "Stockholm"
+    },
+    {
+      "name": "柏林",
+      "code": "BER",
+      "spell": "Berlin"
+    },
+    {
+      "name": "曼彻斯特(英国)",
+      "code": "MAN",
+      "spell": "Manchester"
+    },
+    {
+      "name": "马德里",
+      "code": "MAD",
+      "spell": "Madrid"
+    },
+    {
+      "name": "苏黎世",
+      "code": "ZRH",
+      "spell": "Zurich"
+    },
+    {
+      "name": "布鲁塞尔",
+      "code": "BRU",
+      "spell": "Brussels"
+    },
+    {
+      "name": "哥本哈根",
+      "code": "CPH",
+      "spell": "Copenhagen"
+    },
+    {
+      "name": "赫尔辛基",
+      "code": "HEL",
+      "spell": "Helsinki"
+    },
+    {
+      "name": "维也纳",
+      "code": "VIE",
+      "spell": "Vienna"
+    },
+    {
+      "name": "巴塞罗那",
+      "code": "BCN",
+      "spell": "Barcelona"
+    },
+    {
+      "name": "雅典",
+      "code": "ATH",
+      "spell": "Athens"
+    },
+    {
+      "name": "爱丁堡",
+      "code": "EDI",
+      "spell": "Edinburgh"
+    },
+    {
+      "name": "伯明翰(英国)",
+      "code": "BHX",
+      "spell": "Birmingham"
+    },
+    {
+      "name": "纽卡斯尔(英国)",
+      "code": "NCL",
+      "spell": "Newcastle"
+    },
+    {
+      "name": "日内瓦",
+      "code": "GVA",
+      "spell": "Geneva"
+    },
+    {
+      "name": "圣彼得堡",
+      "code": "LED",
+      "spell": "SAINT PETERSBURG"
+    },
+    {
+      "name": "格拉斯哥",
+      "code": "GLA",
+      "spell": "Glasgow"
+    },
+    {
+      "name": "基辅",
+      "code": "IEV",
+      "spell": "Kiev"
+    },
+    {
+      "name": "布达佩斯",
+      "code": "BUD",
+      "spell": "Budapest"
+    },
+    {
+      "name": "汉堡",
+      "code": "HAM",
+      "spell": "Hamburg"
+    },
+    {
+      "name": "布拉格",
+      "code": "PRG",
+      "spell": "Prague"
+    },
+    {
+      "name": "杜塞尔多夫",
+      "code": "DUS",
+      "spell": "Dusseldorf"
+    },
+    {
+      "name": "开罗",
+      "code": "CAI",
+      "spell": "Cairo"
+    },
+    {
+      "name": "约翰内斯堡",
+      "code": "JNB",
+      "spell": "Johannesburg"
+    },
+    {
+      "name": "开普敦",
+      "code": "CPT",
+      "spell": "Cape Town"
+    },
+    {
+      "name": "内罗毕",
+      "code": "NBO",
+      "spell": "Nairobi"
+    },
+    {
+      "name": "拉各斯",
+      "code": "LOS",
+      "spell": "Lagos"
+    },
+    {
+      "name": "罗安达",
+      "code": "LAD",
+      "spell": "Luanda"
+    },
+    {
+      "name": "毛里求斯",
+      "code": "MRU",
+      "spell": "Mauritius"
+    },
+    {
+      "name": "达累斯萨拉姆",
+      "code": "DAR",
+      "spell": "Dar es salaam"
+    },
+    {
+      "name": "亚的斯亚贝巴",
+      "code": "ADD",
+      "spell": "Addis ababa"
+    },
+    {
+      "name": "喀土穆",
+      "code": "KRT",
+      "spell": "Khartoum"
+    },
+    {
+      "name": "阿克拉",
+      "code": "ACC",
+      "spell": "Accra"
+    },
+    {
+      "name": "阿尔及尔",
+      "code": "ALG",
+      "spell": "Algiers"
+    },
+    {
+      "name": "卡萨布兰卡",
+      "code": "CAS",
+      "spell": "Casablanca"
+    },
+    {
+      "name": "德班",
+      "code": "DUR",
+      "spell": "durban"
+    },
+    {
+      "name": "突尼斯",
+      "code": "TUN",
+      "spell": "Tunis"
+    },
+    {
+      "name": "卢萨卡",
+      "code": "LUN",
+      "spell": "Lusaka"
+    },
+    {
+      "name": "哈拉雷",
+      "code": "HRE",
+      "spell": "Harare"
+    },
+    {
+      "name": "雅温得",
+      "code": "YAO",
+      "spell": "Yaounde"
+    },
+    {
+      "name": "哈博罗内",
+      "code": "GBE",
+      "spell": "Gaborone"
+    },
+    {
+      "name": "金沙萨",
+      "code": "FIH",
+      "spell": "Kinshasa"
+    },
+    {
+      "name": "马普托",
+      "code": "MPM",
+      "spell": "Maputo"
+    },
+    {
+      "name": "杜阿拉",
+      "code": "DLA",
+      "spell": "Douala"
+    },
+    {
+      "name": "费里敦",
+      "code": "FNA",
+      "spell": "Freetown"
+    },
+    {
+      "name": "阿比让",
+      "code": "ABJ",
+      "spell": "Abidjan"
+    },
+    {
+      "name": "卢克索",
+      "code": "LXR",
+      "spell": "Luxor"
+    },
+    {
+      "name": "纽约",
+      "code": "NYC",
+      "spell": "New York"
+    },
+    {
+      "name": "洛杉矶",
+      "code": "LAX",
+      "spell": "Los Angeles"
+    },
+    {
+      "name": "旧金山",
+      "code": "SFO",
+      "spell": "San Francisco"
+    },
+    {
+      "name": "温哥华",
+      "code": "YVR",
+      "spell": "Vancouver"
+    },
+    {
+      "name": "芝加哥",
+      "code": "CHI",
+      "spell": "Chicago"
+    },
+    {
+      "name": "多伦多",
+      "code": "YTO",
+      "spell": "Toronto"
+    },
+    {
+      "name": "西雅图",
+      "code": "SEA",
+      "spell": "Seattle"
+    },
+    {
+      "name": "华盛顿",
+      "code": "WAS",
+      "spell": "Washington"
+    },
+    {
+      "name": "波士顿",
+      "code": "BOS",
+      "spell": "Boston"
+    },
+    {
+      "name": "底特律",
+      "code": "DTT",
+      "spell": "Detroit"
+    },
+    {
+      "name": "亚特兰大",
+      "code": "ATL",
+      "spell": "Atlanta"
+    },
+    {
+      "name": "休斯敦",
+      "code": "HOU",
+      "spell": "Houston"
+    },
+    {
+      "name": "蒙特利尔",
+      "code": "YMQ",
+      "spell": "Montreal"
+    },
+    {
+      "name": "夏威夷",
+      "code": "HNL",
+      "spell": "Honolulu"
+    },
+    {
+      "name": "塞班",
+      "code": "SPN",
+      "spell": "Saipan"
+    },
+    {
+      "name": "达拉斯",
+      "code": "DFW",
+      "spell": "Dallas"
+    },
+    {
+      "name": "明尼阿波利斯",
+      "code": "MSP",
+      "spell": "Minneapolis"
+    },
+    {
+      "name": "费城",
+      "code": "PHL",
+      "spell": "Philadelphia"
+    },
+    {
+      "name": "圣保罗(巴西)",
+      "code": "SAO",
+      "spell": "Sao Paulo"
+    },
+    {
+      "name": "渥太华",
+      "code": "YOW",
+      "spell": "Ottawa"
+    },
+    {
+      "name": "墨西哥城",
+      "code": "MEX",
+      "spell": "Mexico City"
+    },
+    {
+      "name": "拉斯维加斯",
+      "code": "LAS",
+      "spell": "Las Vegas"
+    },
+    {
+      "name": "卡尔加里",
+      "code": "YYC",
+      "spell": "Calgary"
+    },
+    {
+      "name": "迈阿密",
+      "code": "MIA",
+      "spell": "Miami"
+    },
+    {
+      "name": "丹佛",
+      "code": "DEN",
+      "spell": "Denver"
+    },
+    {
+      "name": "奥兰多",
+      "code": "ORL",
+      "spell": "Orlando"
+    },
+    {
+      "name": "波特兰(美国)",
+      "code": "PDX",
+      "spell": "Portland"
+    },
+    {
+      "name": "曼彻斯特(美国)",
+      "code": "MHT",
+      "spell": "Manchester"
+    },
+    {
+      "name": "埃德蒙顿",
+      "code": "YEA",
+      "spell": "Edmonton"
+    },
+    {
+      "name": "布宜诺斯艾利斯",
+      "code": "BUE",
+      "spell": "Buenosaires"
+    },
+    {
+      "name": "悉尼(澳大利亚)",
+      "code": "SYD",
+      "spell": "Sydney"
+    },
+    {
+      "name": "墨尔本(澳大利亚)",
+      "code": "MEL",
+      "spell": "Melbourne"
+    },
+    {
+      "name": "奥克兰(新西兰)",
+      "code": "AKL",
+      "spell": "Auckland"
+    },
+    {
+      "name": "布里斯班",
+      "code": "BNE",
+      "spell": "Brisbane"
+    },
+    {
+      "name": "阿德莱德",
+      "code": "ADL",
+      "spell": "Adelaide"
+    },
+    {
+      "name": "珀斯",
+      "code": "PER",
+      "spell": "Perth"
+    },
+    {
+      "name": "惠灵顿",
+      "code": "WLG",
+      "spell": "Wellington"
+    },
+    {
+      "name": "堪培拉",
+      "code": "CBR",
+      "spell": "Canberra"
+    },
+    {
+      "name": "凯恩斯",
+      "code": "CNS",
+      "spell": "Cairns"
+    },
+    {
+      "name": "楠迪",
+      "code": "NAN",
+      "spell": "Nadi"
+    },
+    {
+      "name": "黄金海岸",
+      "code": "OOL",
+      "spell": "Gold coast"
+    },
+    {
+      "name": "帕皮堤",
+      "code": "PPT",
+      "spell": "PAPEETE"
+    },
+    {
+      "name": "霍巴特",
+      "code": "HBA",
+      "spell": "Hobart"
+    },
+    {
+      "name": "达尔文",
+      "code": "DRW",
+      "spell": "Darwin"
+    },
+    {
+      "name": "达尼丁",
+      "code": "DUD",
+      "spell": "DUNEDIN"
+    }
+  ]
+}

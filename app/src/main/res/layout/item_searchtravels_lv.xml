@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white2gray_sel"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="by"
+                android:textColor="@color/graya"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="马赛克Sir"
+                android:textColor="@color/green1"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="catkapi konnkevi 阿拉恰特小旅馆 充满爱的早餐"
+            android:textColor="#222222"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:text="中午12点，从塞尔丘克（Selcuk）Otogar坐车到伊兹梅尔（Izmer）Otogar 再换乘到切什梅（Cesme）的大巴，中途在阿拉恰特（Alacati）会有停靠，我们便在此下车。下车的点也是Alacati-llica-Cesme小巴会停的站台，站头上一直有位晒得通红的老伯在问等车的人是不是去Cesme"
+            android:textColor="#555555"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_lookmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="查看全文"
+            android:textColor="@color/green1"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
